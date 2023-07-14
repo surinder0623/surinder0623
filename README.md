@@ -1,10 +1,17 @@
-- 👋 Hi, I’m @surinder0623
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+import random
 
-<!---
-surinder0623/surinder0623 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+def signature():
+  """Generates a fancy signature for Surinder Singh."""
+  name = "Surinder Singh"
+  initials = "S.S."
+  random_char = random.choice("!@#$%^&*()_-")
+  return f"""
+    {name} {initials} {random_char}
+    \n
+    [![Github](https://img.shields.io/badge/github-%23121212.svg?style=flat-square)](https://github.com/surindersingh)
+    [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=flat-square)](https://www.linkedin.com/in/surindersingh/)
+    [![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?style=flat-square)](https://twitter.com/surindersingh)
+  """
+
+if __name__ == "__main__":
+  print(signature())
